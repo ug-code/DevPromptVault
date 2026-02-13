@@ -47,3 +47,22 @@ ForEach-Object {
     "`n`n===== $($_.FullName) =====`n"  # Dosya başlığı
     [System.IO.File]::ReadAllText($_.FullName, [System.Text.Encoding]::UTF8)  # Dosya içeriği
 } | Set-Content nextjs-full-project-dump.txt -Encoding utf8
+```
+
+## 💾 Laravel Proje Dump Alma (PowerShell)
+
+Laravel projenizin tüm önemli dosyalarını tek bir metin dosyasında birleştirmek için aşağıdaki PowerShell komutunu kullanabilirsiniz:
+
+```powershell
+# Proje kök dizininde çalıştırın
+# Tüm PHP, Blade, JS, CSS, JSON ve Markdown dosyalarını tek bir TXT dosyasında birleştirir
+# .env ve hassas dosyalar dahil edilmez
+
+Get-ChildItem -Recurse -Include *.php,*.blade.php,*.js,*.jsx,*.json,*.css,*.md |
+Where-Object { $_.FullName -notmatch "vendor|node_modules|storage|\.git|\.env" } |
+ForEach-Object {
+    "`n`n===== $($_.FullName) =====`n"  # Dosya başlığı
+    [System.IO.File]::ReadAllText($_.FullName, [System.Text.Encoding]::UTF8)  # Dosya içeriği
+} | Set-Content laravel-full-project-dump.txt -Encoding utf8
+
+```
