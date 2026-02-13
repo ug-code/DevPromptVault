@@ -31,3 +31,19 @@ Amacı, profesyonel seviye kod standartları, en iyi uygulamalar ve örnekler ü
 ## 🌟 Katkıda Bulunma
 Yeni promptlar, en iyi uygulamalar veya güncellemeler eklemek isterseniz, pull request açabilirsiniz.  
 Hedefimiz, sürekli güncel ve profesyonel bir cheatbook oluşturmak.
+
+
+## 💾 Next.js Proje Dump Alma (PowerShell)
+
+Next.js projenizin tüm önemli dosyalarını tek bir metin dosyasında birleştirmek için aşağıdaki PowerShell komutunu kullanabilirsiniz:
+
+```powershell
+# Proje kök dizininde çalıştırın
+# Tüm TypeScript/JavaScript/CSS/JSON/Markdown dosyalarını tek bir TXT dosyasında birleştirir
+
+Get-ChildItem -Recurse -Include *.ts,*.tsx,*.js,*.jsx,*.json,*.css,*.md |
+Where-Object { $_.FullName -notmatch "node_modules|\.next|\.git" } |
+ForEach-Object {
+    "`n`n===== $($_.FullName) =====`n"  # Dosya başlığı
+    [System.IO.File]::ReadAllText($_.FullName, [System.Text.Encoding]::UTF8)  # Dosya içeriği
+} | Set-Content nextjs-full-project-dump.txt -Encoding utf8
