@@ -17,6 +17,7 @@ Amacı, profesyonel seviye kod standartları, en iyi uygulamalar ve örnekler ü
 ## 🗂️ Dosya Yapısı
 
 > **Nextjs PROMPTS.md’ye ulaşmak için tıklayın:** [PROMPTS.md](./nextjs/PROMPTS.md)
+
 > **Larevel PROMPTS.md’ye ulaşmak için tıklayın:** [PROMPTS.md](./laravel/PROMPTS.md)
 ---
 
