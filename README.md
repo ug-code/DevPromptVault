@@ -32,6 +32,8 @@ Amacı, profesyonel seviye kod standartları, en iyi uygulamalar ve örnekler ü
 Yeni promptlar, en iyi uygulamalar veya güncellemeler eklemek isterseniz, pull request açabilirsiniz.  
 Hedefimiz, sürekli güncel ve profesyonel bir cheatbook oluşturmak.
 
+## Dump amacı
+Tek bir dosya haline getirerek chatgpt vb ai araçlarına dosyayı atarak projeyi anlayıp öneri sağlamasını amaçlamaktadır.
 
 ## 💾 Next.js Proje Dump Alma (PowerShell)
 
