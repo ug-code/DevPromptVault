@@ -16,9 +16,8 @@
 ## 🐘 PHP / Laravel
 
 ### Genel Kurallar
-- PHP 8.1+ özelliklerini uygunsa kullan (örn. typed properties, match expressions).  
+- PHP 8.2+ özelliklerini uygunsa kullan (örn. typed properties, match expressions).  
 - PSR-12 kodlama standartlarını uygula.  
-- Strict typing kullan: `declare(strict_types=1);`  
 - Laravel’in built-in özelliklerini ve helper’larını mümkün olduğunca kullan.  
 - Dosya yapısında Laravel dizin ve isimlendirme konvansiyonlarını takip et.  
 
@@ -43,6 +42,19 @@
 - Composer ile dependency yönetimi
 
 ---
+## 🔗 Artisan
+-Çalıştırmam için artisan kodlarını vermeyi unutma.
+## 🔑 Temel Konvansiyonlar
+1. Laravel’in **MVC** mimarisini takip et.  
+2. Application endpoint’leri için Laravel routing sistemini kullan.  
+3. Request validasyonu için Form Requests kullan.  
+4. Görünümler için Laravel **Blade** template engine kullan.  
+5. Database ilişkilerini Eloquent ile uygula.  
+6. Laravel’in built-in authentication scaffolding’ini kullan.  
+7. API resource dönüşümlerini doğru uygula.  
+8. Ayrık (decoupled) kod için event ve listener sistemini kullan.  
+9. Veri bütünlüğü için database transaction uygula.  
+10. Tekrarlayan görevler için Laravel’in built-in scheduling özelliklerini kullan.
 
 ## 🏆 Laravel En İyi Uygulamaları
 - Mümkün olduğunda raw SQL yerine Eloquent ORM kullan.  
@@ -61,14 +73,4 @@
 
 ---
 
-## 🔑 Temel Konvansiyonlar
-1. Laravel’in **MVC** mimarisini takip et.  
-2. Application endpoint’leri için Laravel routing sistemini kullan.  
-3. Request validasyonu için Form Requests kullan.  
-4. Görünümler için Laravel **Blade** template engine kullan.  
-5. Database ilişkilerini Eloquent ile uygula.  
-6. Laravel’in built-in authentication scaffolding’ini kullan.  
-7. API resource dönüşümlerini doğru uygula.  
-8. Ayrık (decoupled) kod için event ve listener sistemini kullan.  
-9. Veri bütünlüğü için database transaction uygula.  
-10. Tekrarlayan görevler için Laravel’in built-in scheduling özelliklerini kullan.
+
