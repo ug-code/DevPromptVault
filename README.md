@@ -60,7 +60,7 @@ Laravel projenizin tüm önemli dosyalarını tek bir metin dosyasında birleşt
 # Tüm PHP, Blade, JS, CSS, JSON ve Markdown dosyalarını tek bir TXT dosyasında birleştirir
 # .env ve hassas dosyalar dahil edilmez
 
-Get-ChildItem -Recurse -Include *.php,*.blade.php,*.js,*.jsx,*.json,*.css,*.md |
+Get-ChildItem -Recurse -Include *.php,*.blade.php,*.js,*.jsx,*.json,*.css,*.md, *.ts,*.tsx |
 Where-Object { $_.FullName -notmatch "vendor|node_modules|storage|\.git|\.env" } |
 ForEach-Object {
     "`n`n===== $($_.FullName) =====`n"  # Dosya başlığı
