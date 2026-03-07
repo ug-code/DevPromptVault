@@ -16,7 +16,7 @@
 ## 🐘 PHP / Laravel
 
 ### Genel Kurallar
-- PHP 8.2+ özelliklerini uygunsa kullan (örn. typed properties, match expressions).  
+- PHP 8.4+ özelliklerini uygunsa kullan (örn. typed properties, match expressions).  
 - PSR-12 kodlama standartlarını uygula.  
 - Laravel’in built-in özelliklerini ve helper’larını mümkün olduğunca kullan.  
 - Dosya yapısında Laravel dizin ve isimlendirme konvansiyonlarını takip et.  
